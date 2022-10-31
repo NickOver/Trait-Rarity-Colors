@@ -21,11 +21,7 @@ namespace TraitRarityColors
 
         public static bool ShouldShowWindowNow()
         {
-            if (!TraitRarityUISetting.showTraitUI)
-            {
-                return false;
-            }
-            return true;
+            return TraitRarityUISetting.showTraitUI;
         }
 
         public static void DrawInfowWindow(Pawn pawn)
